@@ -1,0 +1,16 @@
+
+
+
+.header {
+    transition: all 500ms;
+    background-color: #292929;
+}
+
+.capteurpanel {
+    transition: all 500ms;
+    font-family: monospace;
+    font-size: x-small;
+    background-color: #444;
+}
+
+

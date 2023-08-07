@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#000000"
+   height="800px"
+   width="800px"
+   version="1.1"
+   id="Layer_1"
+   viewBox="0 0 512 512"
+   xml:space="preserve"
+   sodipodi:docname="cymbal-dual.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs2320" /><sodipodi:namedview
+   id="namedview2318"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   showgrid="false"
+   inkscape:zoom="0.90875"
+   inkscape:cx="187.62036"
+   inkscape:cy="400"
+   inkscape:window-width="1920"
+   inkscape:window-height="1020"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+
+<rect
+   style="fill:#000000;stroke:#000000;stroke-width:0.64;stroke-opacity:1"
+   id="rect2744"
+   width="22.43088"
+   height="265.44794"
+   x="229.93599"
+   y="212.22092" /><ellipse
+   style="fill:#ff0000;stroke:#000000;stroke-width:0.95115;stroke-opacity:1"
+   id="path3055"
+   cx="247.24739"
+   cy="180.10567"
+   rx="258.16455"
+   ry="45.323952"
+   transform="matrix(0.99852904,-0.05421948,0.06106841,0.99813358,0,0)" /><g
+   id="g2315">
+	<g
+   id="g2313">
+		<path
+   d="M440.871,123.538c-34.736-5.293-77.172-8.009-123.466-8.009c-20.314,0-40.964,0.526-62.636,1.583V95.344V82.059    c0-6.005-4.832-10.871-10.836-10.871s-10.836,4.867-10.836,10.871v14.516v21.789c-62.61,4.119-120.418,12.439-164.636,23.777    c-57.011,14.618-68.206,28.365-68.063,31.245c0.144,2.88,12.536,15.45,70.719,24.318c50.153,7.642,116.573,9.913,187.047,6.392    c70.48-3.521,136.348-12.397,185.49-24.997c57.006-14.617,68.12-28.362,67.978-31.243    C511.487,144.976,499.053,132.406,440.871,123.538z"
+   id="path2311" />
+	</g>
+</g>
+<rect
+   style="fill:#ff0000;stroke:#000000;stroke-width:0.64;stroke-opacity:1"
+   id="rect2960"
+   width="30.87788"
+   height="24.990437"
+   x="190.1709"
+   y="164.13084" /></svg>

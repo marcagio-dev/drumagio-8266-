@@ -1,0 +1,244 @@
+[
+  {
+    "labelEn": "Acoustic bass drum",
+    "labelFr": "Grosse caisse acoustique",
+    "value": 35
+  },
+  {
+    "labelEn": "Bass Drum 1",
+    "labelFr": "Grosse Caisse 1",
+    "value": 36
+  },
+  {
+    "labelEn": "Side Stick",
+    "labelFr": "Baguette",
+    "value": 37
+  },
+  {
+    "labelEn": "Acoustic Snare",
+    "labelFr": "Caisse claire acoustique",
+    "value": 38
+  },
+  {
+    "labelEn": "Hand Clap",
+    "labelFr": "Clap de mains",
+    "value": 39
+  },
+  {
+    "labelEn": "Electric Snare",
+    "labelFr": "Caisse claire électrique",
+    "value": 40
+  },
+  {
+    "labelEn": "Low Floor Tom",
+    "labelFr": "Tom bas de plancher",
+    "value": 41
+  },
+  {
+    "labelEn": "Closed Hi-Hat",
+    "labelFr": "Charleston fermé",
+    "value": 42
+  },
+  {
+    "labelEn": "High Floor Tom",
+    "labelFr": "Tom haut de plancher",
+    "value": 43
+  },
+  {
+    "labelEn": "Pedal Hi-Hat",
+    "labelFr": "Pédale de charleston",
+    "value": 44
+  },
+  {
+    "labelEn": "Low Tom",
+    "labelFr": "Tom bas",
+    "value": 45
+  },
+  {
+    "labelEn": "Open Hi-Hat",
+    "labelFr": "Charleston ouvert",
+    "value": 46
+  },
+  {
+    "labelEn": "Low-Mid Tom",
+    "labelFr": "Tom moyen bas",
+    "value": 47
+  },
+  {
+    "labelEn": "Hi-Mid Tom",
+    "labelFr": "Tom haut moyen",
+    "value": 48
+  },
+  {
+    "labelEn": "Crash Cymbal 1",
+    "labelFr": "Cymbale crash 1",
+    "value": 49
+  },
+  {
+    "labelEn": "High Tom",
+    "labelFr": "Tom haut",
+    "value": 50
+  },
+  {
+    "labelEn": "Ride Cymbal 1",
+    "labelFr": "Ride",
+    "value": 51
+  },
+  {
+    "labelEn": "Chinese Cymbal",
+    "labelFr": "Cymbale chinoise",
+    "value": 52
+  },
+  {
+    "labelEn": "Ride Bell",
+    "labelFr": "Ride, cloche",
+    "value": 53
+  },
+  {
+    "labelEn": "Tambourine",
+    "labelFr": "Tambourin",
+    "value": 54
+  },
+  {
+    "labelEn": "Splash Cymbal",
+    "labelFr": "Cymbale splash",
+    "value": 55
+  },
+  {
+    "labelEn": "Cowbell",
+    "labelFr": "Cloche à vache",
+    "icon": "/assets/icons/cow.svg",
+    "value": 56
+  },
+  {
+    "labelEn": "Crash Cymbal 2",
+    "labelFr": "Cymbale crash 2",
+    "value": 57
+  },
+  {
+    "labelEn": "Vibraslap",
+    "labelFr": "Vibraslap",
+    "value": 58
+  },
+  {
+    "labelEn": "Ride Cymbal 2",
+    "labelFr": "Ride 2",
+    "value": 59
+  },
+  {
+    "labelEn": "Hi Bongo",
+    "labelFr": "Bongo haut",
+    "value": 60
+  },
+  {
+    "labelEn": "Low Bongo",
+    "labelFr": "Bongo bas",
+    "value": 61
+  },
+  {
+    "labelEn": "Mute Hi Conga",
+    "labelFr": "Conga haut sourdine",
+    "value": 62
+  },
+  {
+    "labelEn": "Open Hi Conga",
+    "labelFr": "Conga haut ouvert",
+    "value": 63
+  },
+  {
+    "labelEn": "Low Conga",
+    "labelFr": "Conga bas",
+    "value": 64
+  },
+  {
+    "labelEn": "High Timbale",
+    "labelFr": "Timbale Haut",
+    "value": 65
+  },
+  {
+    "labelEn": "Low Timbale",
+    "labelFr": "Tombale bas",
+    "value": 66
+  },
+  {
+    "labelEn": "High Agogo",
+    "labelFr": "Agogo haut",
+    "value": 67
+  },
+  {
+    "labelEn": "Low Agogo",
+    "labelFr": "Agogo bas",
+    "value": 68
+  },
+  {
+    "labelEn": "Cabasa",
+    "labelFr": "Cabosse",
+    "value": 69
+  },
+  {
+    "labelEn": "Maracas",
+    "labelFr": "Maracas",
+    "value": 70
+  },
+  {
+    "labelEn": "Short Whistle",
+    "labelFr": "Petit sifflet",
+    "value": 71
+  },
+  {
+    "labelEn": "Long Whistle",
+    "labelFr": "Long sifflet",
+    "value": 72
+  },
+  {
+    "labelEn": "Short Guiro",
+    "labelFr": "Guiro court",
+    "value": 73
+  },
+  {
+    "labelEn": "Long Guiro",
+    "labelFr": "Guiro long",
+    "value": 74
+  },
+  {
+    "labelEn": "Claves",
+    "labelFr": "Claves",
+    "value": 75
+  },
+  {
+    "labelEn": "Hi Wood Block",
+    "labelFr": "Bloc de bois haut",
+    "value": 76
+  },
+  {
+    "labelEn": "Low Wood Block",
+    "labelFr": "Bloc de bois bas",
+    "value": 77
+  },
+  {
+    "labelEn": "Mute Cuica",
+    "labelFr": "Cuica sourdine",
+    "icon": "/assets/icons/goblet-drum.svp",
+    "value": 78
+  },
+  {
+    "labelEn": "Open Cuica",
+    "labelFr": "Cuica ouvert",
+    "value": 79
+  },
+  {
+    "labelEn": "Mute Triangle",
+    "labelFr": "Triangle sourdine",
+    "value": 80
+  },
+  {
+    "labelEn": "Open Triangle",
+    "labelFr": "Triangle ouvert",
+    "value": 81
+  },
+  {
+    "labelEn": "Shaker",
+    "labelFr": "Hochet",
+    "value": 82
+  }
+]

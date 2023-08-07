@@ -1,0 +1,21 @@
+<button pButton class="p-button-success" type="button" label="+ Ajouter un instrument"
+(click)="ajouterInstrument()"></button>
+
+<div *ngIf="instruments?.length > 0 " class="flex flex-column justify-content-center gap-3">
+
+
+    <ng-container *ngFor="let sens of instruments; let s = index">
+        <div class="flex justify-content-center align-content-center border-dashed gap-3" style="padding:2em;">
+            <div>{{sens?.nom}}</div>
+        
+
+        </div>        
+    </ng-container>
+
+    <div class="flex justify-content-center align-content-center border-dashed gap-3" style="padding:2em;">
+
+
+
+
+    </div>
+</div>

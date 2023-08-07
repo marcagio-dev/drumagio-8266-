@@ -1,0 +1,67 @@
+<div *ngIf="sensors.controls.length > 15; else loadingSensors" class="flex gap-3 p-3" style="
+    background-color: rgb(28, 28, 28);
+    border-radius: 5px;
+    border: 3px solid black;
+    box-shadow: 12px 7px 7px rgba(0, 0, 0, 0.39); 
+  ">
+  <div class="grid">
+    <div class="col-12 flex justify-content-end align-content-center gap-3" style="border: 2px black;   ">
+      <button pButton class="p-button-success" type="button" label="Charger" icon="pi pi-download" (click)="loadEsp()"></button>
+      <button pButton class="p-button-warning" type="button" label="Enregistrer" icon="pi pi-save" (click)="saveEsp()"></button>
+      <button pButton class="p-button-danger" type="button" label="Réinitialiser" icon="pi pi-sync" (click)="resetEsp()"></button>
+
+
+    </div>
+    <div [formGroup]="capteurForm" class="col-12 grid flex gap-3">
+      <ng-container *ngIf="sensors.length > 14 else loadingSensors" formArrayName="sensors">
+
+        <ng-container *ngFor="let inpa of sensors?.controls; let i = index">
+          <ng-container [formGroupName]="i">
+
+            <ng-container *ngIf="i === 7 || i === 14">
+              <div class="col-12"></div>
+            </ng-container>
+            <div class="col flex flex-column gap-1 capteurpanel" style="max-width:200px;">
+              <div class="flex justify-content-between align-items-center gap-1 p-1 header text-4xl"
+                (click)="selectCapteur(inpa.value)">
+                <i class="pi pi-circle-fill text-4xl" [ngStyle]="{
+                  border: capteurSelect.id === i ? '#15ff00' : 'black',
+                  color: i < 7 ? 'black' : i > 13 ? '#777777' : 'red'
+                }"></i>
+                {{ i }}
+                <p-inputSwitch formControlName="etat"
+                  (onChange)="sendMsgValue({capteur: i, spec: 'etat', valeur: $event.checked ? 1 : 0})"></p-inputSwitch>
+              </div>
+
+              <div class="flex justify-content-around align-items-around meters p-3">
+                <div class="flex flex-column" style="width:100%;height: 100%;">
+                  <app-line-meter [capteur]="inpa.value" [selectedCapteur]="false"></app-line-meter>
+                  <p-dropdown formControlName="note" placeholder="{{i <= 1 ? 'CC' : 'MIDI'}}"
+                    [options]="i <= 1 ? ccList : midiInstrumentList"
+                    (onChange)="sendMsgValue({capteur: i, spec: 'note', valeur: $event.value})">
+
+                  </p-dropdown>
+                </div>
+
+
+                <div class="flex flex-column">
+
+                  <p-knob [valueTemplate]="inpa.value.plafond / 127 | percent" formControlName="plafond" [min]="0"
+                    [max]="127" [size]="40"
+                    (onChange)="sendMsgValue({capteur: i, spec: 'plafond', valeur: $event})"></p-knob>
+
+                  <p-knob [valueTemplate]="inpa.value.plancher / 127 | percent " formControlName="plancher" [min]="0"
+                    [max]="127" [size]="40"
+                    (onChange)="sendMsgValue({capteur: i,spec:  'plancher', valeur: $event})"></p-knob>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+        </ng-container>
+      </ng-container>
+    </div>
+  </div>
+</div>
+<ng-template #loadingSensors>
+  Connexion en cours...
+</ng-template>

@@ -1,0 +1,56 @@
+{
+    "getConfig" : {
+    "MAX_TIME_BETWEEN_PEAKS": 25,
+    "MIN_TIME_BETWEEN_NOTES": 50,
+    "sensors": [
+      {
+        "sensorId": 0,
+        "sensorOn": true,
+        "sensorType": "FSR",
+        "sensorNote": 4,
+        "sensorThresholdLow": 1,
+        "sensorThresholdHigh": 127
+      },
+      {
+        "sensorId": 1,
+        "sensorOn": true,
+        "sensorType": "Piezo",
+        "sensorNote": 42,
+        "sensorThresholdLow": 1,
+        "sensorThresholdHigh": 127
+      },
+      {
+        "sensorId": 2,
+        "sensorOn": true,
+        "sensorType": "Piezo",
+        "sensorNote": 42,
+        "sensorThresholdLow": 1,
+        "sensorThresholdHigh": 127
+      },
+      {
+        "sensorId": 3,
+        "sensorOn": true,
+        "sensorType": "Piezo",
+        "sensorNote": 42,
+        "sensorThresholdLow": 1,
+        "sensorThresholdHigh": 127
+      },
+      {
+        "sensorId": 4,
+        "sensorOn": true,
+        "sensorType": "Piezo",
+        "sensorNote": 42,
+        "sensorThresholdLow": 1,
+        "sensorThresholdHigh": 127
+      },
+      {
+        "sensorId": 5,
+        "sensorOn": true,
+        "sensorType": "Piezo",
+        "sensorNote": 42,
+        "sensorThresholdLow": 1,
+        "sensorThresholdHigh": 127
+      }
+    ]
+  }
+}

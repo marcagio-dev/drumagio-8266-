@@ -1,0 +1,52 @@
+<div class="flex align-items-center" style="
+    background-color: black;
+  ">
+  <div style="height:75px;width:100%;">
+    <ngx-charts-line-chart [tooltipDisabled]="true"  [yScaleMax]="127" [yScaleMin]="1" [yAxis]="true"
+      [showYAxisLabel]="false" [xAxis]="false" [showXAxisLabel]="false" [scheme]="colorScheme" [results]="multi"
+      [animations]="false" [showGridLines]="false" [showRefLines]="true" [timeline]="false" [autoScale]="false">
+    </ngx-charts-line-chart>
+  </div>
+  <div class="flex flex-column leds">
+    <div class="flex justify-content-center align-items-center" style="width: 5px; height: 5px" [ngStyle]="{
+        'background-color':
+        isLastValue > 125
+            ? 'red'
+            : 'black',
+        width: '5px',
+        height: '5px'
+      }"></div>
+    <div class="flex justify-content-center align-items-center" style="width: 5px; height: 5px" [ngStyle]="{
+        'background-color':
+        isLastValue > 100
+            ? 'orange'
+            : 'black',
+        width: '5px',
+        height: '5px'
+      }"></div>
+    <div class="flex justify-content-center align-items-center" style="width: 5px; height: 5px" [ngStyle]="{
+        'background-color':
+        isLastValue > 50
+            ? 'yellow'
+            : 'black',
+        width:  '5px',
+        height: '5px'
+      }"></div>
+    <div class="flex justify-content-center align-items-center" style="width: 5px; height: 5px" [ngStyle]="{
+        'background-color':
+        isLastValue > 25
+            ? 'green'
+            : 'black',
+        width: '5px',
+        height:'5px'
+      }"></div>
+    <div class="flex justify-content-center align-items-center" style="width: 5px; height: 5px" [ngStyle]="{
+        'background-color':
+        isLastValue > 1
+            ? 'green'
+            : 'black',
+        width: '5px',
+        height: '5px'
+      }"></div>
+  </div>
+</div>

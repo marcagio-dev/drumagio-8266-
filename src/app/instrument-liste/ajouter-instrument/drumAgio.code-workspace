@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../../../.."
+		},
+		{
+			"name": "drumAgio8266 Mega2560",
+			"path": "../../../../../../../PlatformIO/Projects/drumAgio8266 Mega2560"
+		}
+	],
+	"settings": {
+		"angular.enable-strict-mode-prompt": false,
+		"workbench.colorCustomizations": {
+			"activityBar.background": "#7CDA4D",
+			"titleBar.activeBackground": "#8EDF65",
+			"titleBar.activeForeground": "#0E1D06"
+		}
+	}
+}

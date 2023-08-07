@@ -1,0 +1,71 @@
+<form [formGroup]="instrumentConfig">
+    <div class="flex flex-column gap-3">
+        <div class="flex gap-3">
+
+            <p-listbox [options]="typeOptions" formControlName="type"
+                (onChange)="selectCapteur($event)">
+                <ng-template let-sensOpt pTemplate="item">
+                    <div class="flex flex-column gap-3 justify-content-center">
+                        <div class="flex justify-content-between">
+                            <img [src]="sensOpt?.image" height="25px" />
+                        </div>
+                        <div>{{sensOpt.label}}</div>
+                    </div>
+                </ng-template>
+            </p-listbox>
+            <div class="flex flex-column gap-3">
+                <div class="flex flex-column justify-content-center gap-3">
+                    <div>Couleur :  </div>
+                    <div> <input type="text" pInputText formControlName="nom" placeholder="Nom" /></div>
+                </div>
+               
+
+                <div formArrayName="capteurs" class="flex justify-content-center gap-3">
+                    <ng-container *ngFor="let sens of capteurs?.controls!; let u=index">
+                        <div [formGroupName]="u"
+                            class="flex flex-column justify-content-around align-items-center border-solid gap-3"
+                            style="padding:4em;">
+                          
+                            <div>
+                                {{sens?.value?.nom! || '0'}}
+                            </div>
+
+                            <p-dropdown [options]="capteursLibres!" formControlName="id"></p-dropdown>
+
+                            <div class="flex justify-content-around gap-3">
+                                <div class="flex flex-column justify-content-end align-items-end">
+                                    <div style="width:5em;" class="flex justify-content-end">min: {{ sens?.value?.thresholds?.[0]! || '0'}}</div>
+
+                                </div>
+                                <p-slider formControlName="thresholds" [range]="true" [min]="0" [max]="127"
+                                    orientation="vertical"></p-slider>
+                                <div class="flex flex-column justify-content-start">
+                                    <div style="width:5em;" class="flex justify-content-start">max: {{sens?.value?.thresholds?.[1]! || '0'}}</div>
+
+                                </div>
+
+                            </div>
+                            <!--
+                        <ng-container *ngIf="sen.type.value === 'PIEZO'; else fsr">
+                            <p-dropdown [options]="midiInstrumentList" formControlName="note">
+                            </p-dropdown>
+                        </ng-container>
+                        <ng-template #fsr>
+                            <p-dropdown [options]="ccList" formControlName="note">
+                            </p-dropdown>
+                        </ng-template>
+    
+    -->
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flex justify-content-end gap-3">
+        <button pButton type="button" class="p-button-success" label="Enregistrer" (click)="saveInstrument()"></button>
+    </div>
+
+</form>
